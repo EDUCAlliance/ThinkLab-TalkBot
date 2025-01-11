@@ -14,3 +14,4 @@ If you want to check, if the "installation" of the bot is correct, you can see a
 ```
 sudo  -u www-data php occ talk:bot:list
 ```
+More OCC Commands can you find here: https://nextcloud-talk.readthedocs.io/en/latest/occ/#talkbotinstall
