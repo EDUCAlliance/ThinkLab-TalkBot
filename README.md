@@ -4,7 +4,7 @@ This is the code for our chatbot, which will then be used as a bot for Nextcloud
 This is a project within the EDUC ThinkLab
 
 ## what does this script do?
-So far, the code is not doing much. As soon as the bot is activated in a chat, a webhook is sent after every message sent in this chat, to a URL that is defined in the bot creation process. This PHP script is there to receive this webhook, extract the message sent and then only send back a “Hello world”.
+So far, the code is not doing much. As soon as the bot is activated in a chat, a webhook is sent after every message sent in this chat, to a URL that is defined in the bot creation process. This PHP script is there to receive this webhook, extract the message sent and then (currently) only send back a “Hello world”.
 
 ### install guide
 First of all, you have to install a bot. The term “register” would almost be more appropriate here, as you simply tell Nextcloud to send a webhook to a specific URL after each message (as soon as this bot is activated in the chat) - It is also important to remember the secret token, because the script must encrypt the message with this token in order to be able to respond back 
