@@ -31,7 +31,7 @@ $message = $data['object']['content'];
 $token = $data['target']['id'];
 
 // Define the API URL for sending a bot message to the chat room
-$apiUrl = 'https://nc-test.wunderbluete.org/ocs/v2.php/apps/spreed/api/v1/bot/' . $token . '/message';
+$apiUrl = 'https://DOMAIN OF NEXTCLOUD INSTANCE/ocs/v2.php/apps/spreed/api/v1/bot/' . $token . '/message';
 
 // Prepare the request body with the message, a unique reference ID, and the ID of the original message
 $requestBody = [
