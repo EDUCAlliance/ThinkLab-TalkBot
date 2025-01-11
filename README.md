@@ -6,7 +6,7 @@ This is a project within the EDUC ThinkLab
 So far, the code is not doing much. As soon as the bot is activated in a chat, a webhook is sent after every message sent in this chat, to a URL that is defined in the bot creation process. This PHP script is there to receive this webhook, extract the message sent and then only send back a “Hello world”.
 
 ### install guide
-First of all, you have to install a bot. The term “register” would almost be more appropriate here, as you simply tell Nextcloud to send a webhook to a specific URL after each message (as soon as this bot is activated in the chat)
+First of all, you have to install a bot. The term “register” would almost be more appropriate here, as you simply tell Nextcloud to send a webhook to a specific URL after each message (as soon as this bot is activated in the chat) - It is also important to remember the token, because the script must encrypt the message with this token in order to be able to respond back 
 ```
 cd /path/to/nextcloud-occ-file && sudo -u www-data php occ talk:bot:install -f webhook,response "Name of the Bot" "Token" "https://Domain-of-Nextcloud.de/script-to-handle-webhook.php"
 ```
