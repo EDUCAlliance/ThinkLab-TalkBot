@@ -1,10 +1,10 @@
 <?php
 
 // Shared secret from the bot installation for secure communication
-$secret = '170be4645a7052cd190e2344998a56ed4eb94a5971c5a7e0fd5afac503ba8a8c';
+$secret = '';
 
 // OpenAI API key
-$openaiApiKey = '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';
+$openaiApiKey = '';
 
 // 1. Receive the webhook
 // Retrieve and decode the incoming JSON payload from the webhook
