@@ -58,9 +58,9 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 // Set HTTP headers for the API request, including content type and the signature
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json', // Indicate that the request body is JSON
-    'OCS-APIREQUEST: true', // Required header for Nextcloud API requests
-    'X-Nextcloud-Talk-Signature: ' . $hash, // The generated signature for the response
-    'X-Nextcloud-Talk-Random: ' . $random // The random value used in the signature
+    'OCS-APIRequest: true', // Required header for Nextcloud API requests
+    'X-Nextcloud-Talk-Bot-Random: ' . $random, // The generated signature for the response
+    'X-Nextcloud-Talk-Bot-Signature: ' . $hash, // The random value used in the signature
 ));
 
 // Execute the API request and store the response
