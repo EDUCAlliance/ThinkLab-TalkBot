@@ -92,8 +92,6 @@ $requestBody = [
 // Convert the request body to a JSON string
 $jsonBody = json_encode($requestBody, JSON_THROW_ON_ERROR);
 
-// Generate a new random value for signing the reply
-//$replyRandom = bin2hex(random_bytes(32)); // changed from 32
 
 // Create a signature for the reply message using HMAC
 $replySignature = hash_hmac('sha256', $random . $requestBody['message'], $secret);
